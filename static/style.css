@@ -1,0 +1,95 @@
+body {
+    background-color: #3d3838;
+    margin: 0;
+}
+/* BASE NAV -------------------- */
+.navi {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 800;
+    
+}
+.navtext {
+    color: #fff;
+    text-decoration: none;
+    margin: 15px;
+}
+.header {
+    background-color: #ff9b25;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.navtextS {
+    font-family: Montserrat;
+    color: #fff;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: 800;
+    font-size: 15px;
+}
+.infor {
+    color: #fff;
+    text-decoration: none;
+    margin: 15px;
+}
+/* post_list -------------------- */
+.listcopm {
+    background-color: #4b4545;
+    margin: 40px;
+    border-radius: 20px;
+    border:solid 15px;
+    border-color: #4b4545;
+}
+.productN {
+    text-align: center;
+    color: #0096ff;
+    font-family: Montserrat;
+    font-size: 24;
+    font-weight:normal;
+}
+.inner_list {
+    margin: 20px;
+    color: #0096ff;
+    font-family: Montserrat;
+    font-size: 24;
+    font-weight:normal;
+    background-color: #5a5555;
+    border: solid 20px;
+    border-color: #5a5555;
+    border-radius: 15px;
+}
+
+
+.infor_re {
+    font-family: Montserrat;
+    color: #fff;
+}
+
+/*Contact and WE */ 
+.about_us {
+    font-family: Montserrat;
+    text-align: center; 
+    color: #fff;
+}
+.contacs {
+    font-family: Montserrat;
+    text-align: center; 
+    color: #fff;
+}
+.contacs_link {
+    font-family: Montserrat;
+    text-align: center; 
+    font-size: 25px;
+}
+.contacs_link_text {
+    margin: 20px;
+    color: #0096ff;
+    text-decoration: none;
+}
+
+
+.create_cont {
+    width: 100%;
+    background-color: #fff;
+}

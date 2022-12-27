@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+{% block content %}
+    <div class="listcopm">
+        <div class="productN">
+            <h1>ТОВАРЫ:</h1>
+        </div>
+        <div class="bglist">
+            {% for computer in computers %} 
+                <div class="inner_list">
+                    <h2>{{computer.title}}</h2>
+                    <img width="20%" src="{{ computer.image.url }}">
+                    <a class="infor" href="/main/{{computer.id}}/">подробнее</a>
+                </div>
+                
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+

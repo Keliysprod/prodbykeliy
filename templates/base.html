@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Negr</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navi">
+            <a class="navtext" href="/main/">Главное</a>
+            <a class="navtext" href="/main/buy/">Каталог</a>
+
+            {% if request.user.is_staff %}
+            {% endif %}
+            <a class="navtext" href="/main/sell/">Продать</a>
+        </nav>
+        <div class="services">
+            
+            <a class="navtextS" href="/main/we/">О нас</a>
+            <a class="navtextS" href="/main/contact/">Авторы</a>
+
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

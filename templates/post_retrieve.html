@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="listcopm">
+        <div class="inner_list">
+            <h1>{{ computer.title }}</h1>
+            <img src="{{ computer.image.url }}">
+            <p class="infor_re"> {{ computer.inf }}</p>
+            <p class="infor_re">{{ computer.price }}$</p>
+            {% if request.user.is_staff %}
+                <div>
+                    <a class="infor_re" href="/main/{{ computer.id }}/update/"> Изменить </a>
+                    <a class="infor_re" href="/main/{{ computer.id }}/delete/"> Удалить </a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
